@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #0f172a;
+      color: #f8fafc;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 10%;
+      background: rgba(15, 23, 42, 0.9);
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 100;
+      backdrop-filter: blur(10px);
+    }
+
+    header h1 {
+      font-size: 1.5em;
+      color: #38bdf8;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #f8fafc;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    section {
+      padding: 100px 10%;
+      min-height: 100vh;
+    }
+
+    #hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    #hero h2 {
+      font-size: 2.5em;
+      color: #38bdf8;
+    }
+
+    #hero p {
+      font-size: 1.2em;
+      margin-top: 10px;
+      max-width: 600px;
+      color: #94a3b8;
+    }
+
+    #about, #skills, #projects, #contact {
+      margin-top: 50px;
+    }
+
+    h2.section-title {
+      color: #38bdf8;
+      font-size: 2em;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .skills-list, .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .skill, .project {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    .skill:hover, .project:hover {
+      transform: translateY(-5px);
+    }
+
+    .project h3 {
+      color: #f1f5f9;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background: #1e293b;
+      text-align: center;
+      padding: 20px;
+      color: #94a3b8;
+    }
+
+    .contact-links a {
+      color: #38bdf8;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+      }
+      nav {
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Faizan Iqbal</h1>
+    <nav>
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <h2>Hello, I'm Faizan 👋</h2>
+    <p>A passionate web developer and creative thinker building modern, user-friendly digital experiences.</p>
+  </section>
+
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+    <p>
+      I love turning ideas into reality through clean and efficient code. 
+      My focus is on creating responsive, accessible, and visually appealing web interfaces.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-list">
+      <div class="skill">HTML5</div>
+      <div class="skill">CSS3</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">React</div>
+      <div class="skill">Node.js</div>
+      <div class="skill">Python</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects-grid">
+      <div class="project">
+        <h3>Portfolio Website</h3>
+        <p>A sleek and responsive personal portfolio built using HTML, CSS, and JS.</p>
+      </div>
+      <div class="project">
+        <h3>AI Prompt Tool</h3>
+        <p>A web tool that helps users generate creative AI prompts efficiently.</p>
+      </div>
+      <div class="project">
+        <h3>Landing Page Design</h3>
+        <p>A modern and conversion-focused landing page for a startup product.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class
